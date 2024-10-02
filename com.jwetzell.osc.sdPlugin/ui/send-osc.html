@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Send OSC Settings</title>
+    <meta charset="utf-8" />
+    <script src="https://sdpi-components.dev/releases/v3/sdpi-components.js"></script>
+  </head>
+
+  <body>
+    <!--
+        Learn more about property inspector components at https://sdpi-components.dev/docs/components
+    -->
+    <sdpi-item label="Host" default="127.0.0.1">
+      <sdpi-textfield setting="host" required></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Port" default="9000">
+      <sdpi-textfield setting="port" required></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Address" default="/hello">
+      <sdpi-textfield setting="address" required></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Protocol">
+      <sdpi-radio setting="protocol" columns="2" default="udp" required>
+        <option value="tcp">TCP</option>
+        <option value="udp">UDP</option>
+      </sdpi-radio>
+    </sdpi-item>
+    <sdpi-item label="SLIP">
+      <sdpi-checkbox setting="slip" required></sdpi-checkbox>
+    </sdpi-item>
+  </body>
+</html>

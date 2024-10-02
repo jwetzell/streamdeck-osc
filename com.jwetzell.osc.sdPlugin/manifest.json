@@ -1,0 +1,47 @@
+{
+	"Name": "osc",
+	"Version": "0.1.0.0",
+	"Author": "Joel Wetzell",
+	"Actions": [
+		{
+			"Name": "Send OSC",
+			"UUID": "com.jwetzell.osc.send",
+			"Icon": "imgs/actions/button/icon",
+			"Tooltip": "Send an OSC message",
+			"PropertyInspectorPath": "ui/send-osc.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/button/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		}
+	],
+	"Category": "OSC",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Example OSC plugin",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.4"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.15"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "com.jwetzell.osc"
+}
