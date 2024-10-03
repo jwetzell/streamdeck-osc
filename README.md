@@ -4,6 +4,10 @@
 - supports SLIP encoding the OSC bytes
 
 ## TODO
+- global settings
+  - just host, port?
+  - popup window?
+  - in property inspector?
 - support arguments
   - what's the best way for users to enter that information?
   - currently `s`, `i`, `f`, `b` can be handled by the minimal OSC implementation included here
