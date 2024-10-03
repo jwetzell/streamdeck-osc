@@ -1,4 +1,5 @@
 {
+  "name": "streamdeck-osc",
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w --watch.onEnd=\"streamdeck restart com.jwetzell.osc\""
